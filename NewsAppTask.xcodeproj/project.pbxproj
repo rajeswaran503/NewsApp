@@ -56,15 +56,95 @@
 		13D25BEF22FED25A009CA79E /* NewsAppTask */ = {
 			isa = PBXGroup;
 			children = (
-				13D25BF022FED25A009CA79E /* AppDelegate.swift */,
+				13D25C0522FED52C009CA79E /* Model */,
+				13D25C0622FED545009CA79E /* View */,
+				13D25C0722FED557009CA79E /* ViewModel */,
+				13D25C0D22FED8AC009CA79E /* Resources */,
+				13D25C0C22FED743009CA79E /* SupportingFiles */,
+				13D25C0B22FED6BB009CA79E /* Network */,
+				13D25C0A22FED69C009CA79E /* Database */,
+				13D25C0922FED688009CA79E /* Helpers */,
 				13D25BF222FED25A009CA79E /* ViewController.swift */,
-				13D25BF422FED25A009CA79E /* Main.storyboard */,
-				13D25BFA22FED25B009CA79E /* Assets.xcassets */,
+			);
+			path = NewsAppTask;
+			sourceTree = "<group>";
+		};
+		13D25C0522FED52C009CA79E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13D25C0622FED545009CA79E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13D25C1022FEDB8F009CA79E /* Controllers */,
+				13D25C0F22FED9B9009CA79E /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13D25C0722FED557009CA79E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13D25C0922FED688009CA79E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		13D25C0A22FED69C009CA79E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		13D25C0B22FED6BB009CA79E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		13D25C0C22FED743009CA79E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				13D25BF022FED25A009CA79E /* AppDelegate.swift */,
 				13D25BFC22FED25B009CA79E /* LaunchScreen.storyboard */,
 				13D25BFF22FED25B009CA79E /* Info.plist */,
 				13D25BF722FED25A009CA79E /* NewsAppTask.xcdatamodeld */,
 			);
-			path = NewsAppTask;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		13D25C0D22FED8AC009CA79E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13D25BFA22FED25B009CA79E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13D25C0F22FED9B9009CA79E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				13D25BF422FED25A009CA79E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		13D25C1022FEDB8F009CA79E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = NewsAppTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NewsAppTask/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = NewsAppTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NewsAppTask/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
