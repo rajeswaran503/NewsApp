@@ -8,22 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		13D25BF122FED25A009CA79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25BF022FED25A009CA79E /* AppDelegate.swift */; };
-		13D25BF322FED25A009CA79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25BF222FED25A009CA79E /* ViewController.swift */; };
 		13D25BF622FED25A009CA79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D25BF422FED25A009CA79E /* Main.storyboard */; };
 		13D25BF922FED25A009CA79E /* NewsAppTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13D25BF722FED25A009CA79E /* NewsAppTask.xcdatamodeld */; };
 		13D25BFB22FED25B009CA79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D25BFA22FED25B009CA79E /* Assets.xcassets */; };
 		13D25BFE22FED25B009CA79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D25BFC22FED25B009CA79E /* LaunchScreen.storyboard */; };
+		13D25C1222FEDE1C009CA79E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C1122FEDE1C009CA79E /* SignUpViewController.swift */; };
+		13D25C1422FEDE39009CA79E /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C1322FEDE39009CA79E /* NewsFeedViewController.swift */; };
+		13D25C1722FEF2FD009CA79E /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C1622FEF2FD009CA79E /* TextFieldExtension.swift */; };
+		13D25C1A22FEF861009CA79E /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C1922FEF861009CA79E /* AppConstant.swift */; };
+		13D25C1C22FF00A2009CA79E /* SiguUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C1B22FF00A2009CA79E /* SiguUpViewModel.swift */; };
+		13D25C1F22FF019A009CA79E /* InputFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C1E22FF019A009CA79E /* InputFieldValidator.swift */; };
+		13D25C2122FF0824009CA79E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2022FF0824009CA79E /* UIViewExtension.swift */; };
+		13D25C2322FF11E0009CA79E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2222FF11E0009CA79E /* UIColorExtension.swift */; };
+		13D25C2522FF13CF009CA79E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2422FF13CF009CA79E /* UIViewControllerExtension.swift */; };
+		13D25C2722FF3400009CA79E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2622FF3400009CA79E /* CoreDataManager.swift */; };
+		13D25C2922FF3817009CA79E /* PersonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2822FF3817009CA79E /* PersonDataManager.swift */; };
+		13D25C2B22FF3B86009CA79E /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2A22FF3B86009CA79E /* PersonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13D25BED22FED25A009CA79E /* NewsAppTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D25BF022FED25A009CA79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13D25BF222FED25A009CA79E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13D25BF522FED25A009CA79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13D25BF822FED25A009CA79E /* NewsAppTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsAppTask.xcdatamodel; sourceTree = "<group>"; };
 		13D25BFA22FED25B009CA79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13D25BFD22FED25B009CA79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13D25BFF22FED25B009CA79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D25C1122FEDE1C009CA79E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		13D25C1322FEDE39009CA79E /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		13D25C1622FEF2FD009CA79E /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		13D25C1922FEF861009CA79E /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		13D25C1B22FF00A2009CA79E /* SiguUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiguUpViewModel.swift; sourceTree = "<group>"; };
+		13D25C1E22FF019A009CA79E /* InputFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldValidator.swift; sourceTree = "<group>"; };
+		13D25C2022FF0824009CA79E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		13D25C2222FF11E0009CA79E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		13D25C2422FF13CF009CA79E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		13D25C2622FF3400009CA79E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		13D25C2822FF3817009CA79E /* PersonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataManager.swift; sourceTree = "<group>"; };
+		13D25C2A22FF3B86009CA79E /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +86,6 @@
 				13D25C0B22FED6BB009CA79E /* Network */,
 				13D25C0A22FED69C009CA79E /* Database */,
 				13D25C0922FED688009CA79E /* Helpers */,
-				13D25BF222FED25A009CA79E /* ViewController.swift */,
 			);
 			path = NewsAppTask;
 			sourceTree = "<group>";
@@ -72,6 +93,7 @@
 		13D25C0522FED52C009CA79E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13D25C2A22FF3B86009CA79E /* PersonData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -88,6 +110,7 @@
 		13D25C0722FED557009CA79E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				13D25C1B22FF00A2009CA79E /* SiguUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -95,6 +118,9 @@
 		13D25C0922FED688009CA79E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				13D25C1D22FF016B009CA79E /* InputFieldValidator */,
+				13D25C1822FEF843009CA79E /* AppConstants */,
+				13D25C1522FEF2CC009CA79E /* Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -102,6 +128,8 @@
 		13D25C0A22FED69C009CA79E /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				13D25C2622FF3400009CA79E /* CoreDataManager.swift */,
+				13D25C2822FF3817009CA79E /* PersonDataManager.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -143,8 +171,37 @@
 		13D25C1022FEDB8F009CA79E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				13D25C1122FEDE1C009CA79E /* SignUpViewController.swift */,
+				13D25C1322FEDE39009CA79E /* NewsFeedViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		13D25C1522FEF2CC009CA79E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13D25C1622FEF2FD009CA79E /* TextFieldExtension.swift */,
+				13D25C2022FF0824009CA79E /* UIViewExtension.swift */,
+				13D25C2222FF11E0009CA79E /* UIColorExtension.swift */,
+				13D25C2422FF13CF009CA79E /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13D25C1822FEF843009CA79E /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				13D25C1922FEF861009CA79E /* AppConstant.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
+		13D25C1D22FF016B009CA79E /* InputFieldValidator */ = {
+			isa = PBXGroup;
+			children = (
+				13D25C1E22FF019A009CA79E /* InputFieldValidator.swift */,
+			);
+			path = InputFieldValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,9 +275,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D25BF322FED25A009CA79E /* ViewController.swift in Sources */,
 				13D25BF922FED25A009CA79E /* NewsAppTask.xcdatamodeld in Sources */,
+				13D25C1C22FF00A2009CA79E /* SiguUpViewModel.swift in Sources */,
+				13D25C1A22FEF861009CA79E /* AppConstant.swift in Sources */,
+				13D25C1222FEDE1C009CA79E /* SignUpViewController.swift in Sources */,
+				13D25C1722FEF2FD009CA79E /* TextFieldExtension.swift in Sources */,
 				13D25BF122FED25A009CA79E /* AppDelegate.swift in Sources */,
+				13D25C2722FF3400009CA79E /* CoreDataManager.swift in Sources */,
+				13D25C2122FF0824009CA79E /* UIViewExtension.swift in Sources */,
+				13D25C2322FF11E0009CA79E /* UIColorExtension.swift in Sources */,
+				13D25C2922FF3817009CA79E /* PersonDataManager.swift in Sources */,
+				13D25C1F22FF019A009CA79E /* InputFieldValidator.swift in Sources */,
+				13D25C2522FF13CF009CA79E /* UIViewControllerExtension.swift in Sources */,
+				13D25C2B22FF3B86009CA79E /* PersonData.swift in Sources */,
+				13D25C1422FEDE39009CA79E /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

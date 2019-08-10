@@ -9,19 +9,141 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsAppTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="NewsAppTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hym-wN-jcQ">
+                                <rect key="frame" x="37.5" y="140" width="300" height="320"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="27A-Q7-khr">
+                                        <rect key="frame" x="10" y="20" width="280" height="280"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FqG-KR-EIi">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eD9-rj-TkO">
+                                                <rect key="frame" x="0.0" y="50" width="280" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lO6-Ij-Y0G">
+                                                <rect key="frame" x="0.0" y="100" width="280" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emp.ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNI-pm-NWR">
+                                                <rect key="frame" x="0.0" y="150" width="280" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="U.ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BCn-rM-nXj">
+                                                <rect key="frame" x="0.0" y="200" width="280" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bar No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-bK-zH6">
+                                                <rect key="frame" x="0.0" y="250" width="280" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="27A-Q7-khr" firstAttribute="top" secondItem="hym-wN-jcQ" secondAttribute="top" constant="20" id="QOQ-ca-WiV"/>
+                                    <constraint firstAttribute="bottom" secondItem="27A-Q7-khr" secondAttribute="bottom" constant="20" id="SAt-Fb-xjV"/>
+                                    <constraint firstAttribute="trailing" secondItem="27A-Q7-khr" secondAttribute="trailing" constant="10" id="oaP-b2-C3C"/>
+                                    <constraint firstItem="27A-Q7-khr" firstAttribute="leading" secondItem="hym-wN-jcQ" secondAttribute="leading" constant="10" id="pok-5o-62v"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M24-W8-oOO">
+                                <rect key="frame" x="37.5" y="480" width="300" height="45"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Register "/>
+                                <connections>
+                                    <action selector="registerButtonActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSe-e4-2jl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hym-wN-jcQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="IyQ-cs-U81"/>
+                            <constraint firstItem="M24-W8-oOO" firstAttribute="height" secondItem="hym-wN-jcQ" secondAttribute="width" multiplier="0.15" id="NNH-xd-ue1"/>
+                            <constraint firstItem="hym-wN-jcQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nhe-uW-0we"/>
+                            <constraint firstItem="M24-W8-oOO" firstAttribute="centerX" secondItem="hym-wN-jcQ" secondAttribute="centerX" id="fIt-vP-FwF"/>
+                            <constraint firstItem="M24-W8-oOO" firstAttribute="top" secondItem="hym-wN-jcQ" secondAttribute="bottom" constant="20" id="inn-1W-2aA"/>
+                            <constraint firstItem="M24-W8-oOO" firstAttribute="width" secondItem="hym-wN-jcQ" secondAttribute="width" id="sHe-is-6gh"/>
+                            <constraint firstItem="hym-wN-jcQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="x58-dQ-PY9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="lO6-Ij-Y0G" id="IV7-Ka-LW6"/>
+                        <outlet property="employeeIDTextField" destination="GNI-pm-NWR" id="aR9-oz-f0r"/>
+                        <outlet property="idBarahNoTextField" destination="XD8-bK-zH6" id="RlV-a1-7dU"/>
+                        <outlet property="inputFieldContentView" destination="hym-wN-jcQ" id="LDs-VN-hqK"/>
+                        <outlet property="mobileTextField" destination="eD9-rj-TkO" id="Nsk-PM-ewf"/>
+                        <outlet property="nameTextField" destination="FqG-KR-EIi" id="9XX-j0-yMs"/>
+                        <outlet property="registerButton" destination="M24-W8-oOO" id="ZJD-jK-mDd"/>
+                        <outlet property="unifiedNumberTextField" destination="BCn-rM-nXj" id="epW-kO-cEw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6mZ-0M-b2Z">
+            <objects>
+                <viewController id="OAZ-Xn-iqw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ji9-k9-yCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hi4-UZ-c0o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c5b-SX-oWF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPM-dp-bjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4zF-yO-IbK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IvF-G8-sgx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="07a-kc-waj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OAZ-Xn-iqw" kind="relationship" relationship="rootViewController" id="Tec-na-DXy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HO-bx-jWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="119"/>
         </scene>
     </scenes>
 </document>
