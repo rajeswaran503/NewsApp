@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-            timestampString = "587152760.439787"
+            timestampString = "587216178.799022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "133"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-            timestampString = "587152760.439883"
+            timestampString = "587216178.7991149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "137"
@@ -42,7 +42,7 @@
                   moduleName = "NewsAppTask"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-                  timestampString = "587152760.6830389"
+                  timestampString = "587204158.368102"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "137"
@@ -57,7 +57,7 @@
                   moduleName = "NewsAppTask"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-                  timestampString = "587152760.686088"
+                  timestampString = "587204158.371805"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "137"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-            timestampString = "587152760.439975"
+            timestampString = "587216178.7991821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/Helpers/Extensions/TextFieldExtension.swift"
-            timestampString = "587152760.440082"
+            timestampString = "587205591.764475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/Database/CoreDataManager.swift"
-            timestampString = "587152760.440152"
+            timestampString = "587216178.799281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "savePerson(email:empID:idbarNo:mobile:name:uID:)"
+            landmarkName = "savePerson(email:empID:idbarNo:mobile:name:uID:refID:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +122,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
-            timestampString = "587152760.440219"
+            timestampString = "587216178.79935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "alertMessage(message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
+            timestampString = "587216178.799433"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "alertMessage(message:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsAppTask.PersonResponse) -&gt; () in NewsAppTask.SignUpViewController.saveUserDetails() -&gt; ()"
+                  moduleName = "NewsAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/View/Controllers/SignUpViewController.swift"
+                  timestampString = "587204158.421633"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "235">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (NewsAppTask.APIError) -&gt; () in NewsAppTask.SignUpViewController.saveUserDetails() -&gt; ()"
+                  moduleName = "NewsAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/View/Controllers/SignUpViewController.swift"
+                  timestampString = "587204158.424704"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/NetworkManager/BaseNetworkManager.swift"
+            timestampString = "587205591.764986"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "baseServiceRequest(route:decoder:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

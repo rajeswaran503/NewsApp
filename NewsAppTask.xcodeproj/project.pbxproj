@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13875DCF23003298002508A0 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13875DCE23003298002508A0 /* LoadingIndicator.swift */; };
 		13D25BF122FED25A009CA79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25BF022FED25A009CA79E /* AppDelegate.swift */; };
 		13D25BF622FED25A009CA79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D25BF422FED25A009CA79E /* Main.storyboard */; };
 		13D25BF922FED25A009CA79E /* NewsAppTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13D25BF722FED25A009CA79E /* NewsAppTask.xcdatamodeld */; };
@@ -24,9 +25,18 @@
 		13D25C2722FF3400009CA79E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2622FF3400009CA79E /* CoreDataManager.swift */; };
 		13D25C2922FF3817009CA79E /* PersonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2822FF3817009CA79E /* PersonDataManager.swift */; };
 		13D25C2B22FF3B86009CA79E /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D25C2A22FF3B86009CA79E /* PersonData.swift */; };
+		13DD3F8C22FFF99C00B0CA1C /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F8B22FFF99C00B0CA1C /* BaseRouter.swift */; };
+		13DD3F8E22FFF9CE00B0CA1C /* BaseEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F8D22FFF9CE00B0CA1C /* BaseEndPoint.swift */; };
+		13DD3F9022FFFA1E00B0CA1C /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F8F22FFFA1E00B0CA1C /* Encoding.swift */; };
+		13DD3F9222FFFACC00B0CA1C /* BaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F9122FFFACC00B0CA1C /* BaseNetworkManager.swift */; };
+		13DD3F9422FFFD4E00B0CA1C /* SignUpEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F9322FFFD4E00B0CA1C /* SignUpEndPoint.swift */; };
+		13DD3F9622FFFD8800B0CA1C /* NewsFeedEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F9522FFFD8800B0CA1C /* NewsFeedEndPoint.swift */; };
+		13DD3F9A22FFFDCF00B0CA1C /* NewsFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F9922FFFDCF00B0CA1C /* NewsFeedManager.swift */; };
+		13DD3F9C22FFFDE100B0CA1C /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD3F9B22FFFDE100B0CA1C /* SignUpManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13875DCE23003298002508A0 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		13D25BED22FED25A009CA79E /* NewsAppTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D25BF022FED25A009CA79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D25BF522FED25A009CA79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +56,14 @@
 		13D25C2622FF3400009CA79E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		13D25C2822FF3817009CA79E /* PersonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataManager.swift; sourceTree = "<group>"; };
 		13D25C2A22FF3B86009CA79E /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
+		13DD3F8B22FFF99C00B0CA1C /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		13DD3F8D22FFF9CE00B0CA1C /* BaseEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndPoint.swift; sourceTree = "<group>"; };
+		13DD3F8F22FFFA1E00B0CA1C /* Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
+		13DD3F9122FFFACC00B0CA1C /* BaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkManager.swift; sourceTree = "<group>"; };
+		13DD3F9322FFFD4E00B0CA1C /* SignUpEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEndPoint.swift; sourceTree = "<group>"; };
+		13DD3F9522FFFD8800B0CA1C /* NewsFeedEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedEndPoint.swift; sourceTree = "<group>"; };
+		13DD3F9922FFFDCF00B0CA1C /* NewsFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedManager.swift; sourceTree = "<group>"; };
+		13DD3F9B22FFFDE100B0CA1C /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13875DCD2300327C002508A0 /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				13875DCE23003298002508A0 /* LoadingIndicator.swift */,
+			);
+			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
 		13D25BE422FED259009CA79E = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +109,7 @@
 				13D25C0722FED557009CA79E /* ViewModel */,
 				13D25C0D22FED8AC009CA79E /* Resources */,
 				13D25C0C22FED743009CA79E /* SupportingFiles */,
-				13D25C0B22FED6BB009CA79E /* Network */,
+				13D25C0B22FED6BB009CA79E /* NetworkModule */,
 				13D25C0A22FED69C009CA79E /* Database */,
 				13D25C0922FED688009CA79E /* Helpers */,
 			);
@@ -118,6 +144,7 @@
 		13D25C0922FED688009CA79E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				13875DCD2300327C002508A0 /* LoadingIndicator */,
 				13D25C1D22FF016B009CA79E /* InputFieldValidator */,
 				13D25C1822FEF843009CA79E /* AppConstants */,
 				13D25C1522FEF2CC009CA79E /* Extensions */,
@@ -134,11 +161,15 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
-		13D25C0B22FED6BB009CA79E /* Network */ = {
+		13D25C0B22FED6BB009CA79E /* NetworkModule */ = {
 			isa = PBXGroup;
 			children = (
+				13DD3F8A22FFF97100B0CA1C /* Encoding */,
+				13DD3F8922FFF95D00B0CA1C /* EndPoints */,
+				13DD3F8822FFF93D00B0CA1C /* Routers */,
+				13DD3F8722FFF92200B0CA1C /* NetworkManager */,
 			);
-			path = Network;
+			path = NetworkModule;
 			sourceTree = "<group>";
 		};
 		13D25C0C22FED743009CA79E /* SupportingFiles */ = {
@@ -202,6 +233,42 @@
 				13D25C1E22FF019A009CA79E /* InputFieldValidator.swift */,
 			);
 			path = InputFieldValidator;
+			sourceTree = "<group>";
+		};
+		13DD3F8722FFF92200B0CA1C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				13DD3F9122FFFACC00B0CA1C /* BaseNetworkManager.swift */,
+				13DD3F9922FFFDCF00B0CA1C /* NewsFeedManager.swift */,
+				13DD3F9B22FFFDE100B0CA1C /* SignUpManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		13DD3F8822FFF93D00B0CA1C /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				13DD3F8B22FFF99C00B0CA1C /* BaseRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		13DD3F8922FFF95D00B0CA1C /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				13DD3F8D22FFF9CE00B0CA1C /* BaseEndPoint.swift */,
+				13DD3F9322FFFD4E00B0CA1C /* SignUpEndPoint.swift */,
+				13DD3F9522FFFD8800B0CA1C /* NewsFeedEndPoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		13DD3F8A22FFF97100B0CA1C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				13DD3F8F22FFFA1E00B0CA1C /* Encoding.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,14 +342,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13875DCF23003298002508A0 /* LoadingIndicator.swift in Sources */,
 				13D25BF922FED25A009CA79E /* NewsAppTask.xcdatamodeld in Sources */,
+				13DD3F9222FFFACC00B0CA1C /* BaseNetworkManager.swift in Sources */,
+				13DD3F9A22FFFDCF00B0CA1C /* NewsFeedManager.swift in Sources */,
+				13DD3F9422FFFD4E00B0CA1C /* SignUpEndPoint.swift in Sources */,
 				13D25C1C22FF00A2009CA79E /* SiguUpViewModel.swift in Sources */,
 				13D25C1A22FEF861009CA79E /* AppConstant.swift in Sources */,
+				13DD3F9022FFFA1E00B0CA1C /* Encoding.swift in Sources */,
 				13D25C1222FEDE1C009CA79E /* SignUpViewController.swift in Sources */,
+				13DD3F9622FFFD8800B0CA1C /* NewsFeedEndPoint.swift in Sources */,
 				13D25C1722FEF2FD009CA79E /* TextFieldExtension.swift in Sources */,
 				13D25BF122FED25A009CA79E /* AppDelegate.swift in Sources */,
+				13DD3F9C22FFFDE100B0CA1C /* SignUpManager.swift in Sources */,
 				13D25C2722FF3400009CA79E /* CoreDataManager.swift in Sources */,
+				13DD3F8C22FFF99C00B0CA1C /* BaseRouter.swift in Sources */,
 				13D25C2122FF0824009CA79E /* UIViewExtension.swift in Sources */,
+				13DD3F8E22FFF9CE00B0CA1C /* BaseEndPoint.swift in Sources */,
 				13D25C2322FF11E0009CA79E /* UIColorExtension.swift in Sources */,
 				13D25C2922FF3817009CA79E /* PersonDataManager.swift in Sources */,
 				13D25C1F22FF019A009CA79E /* InputFieldValidator.swift in Sources */,

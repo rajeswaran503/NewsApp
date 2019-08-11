@@ -145,4 +145,9 @@ extension String {
     func trim() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    
+    func validatedText(validationType: ValidatorType) throws -> String {
+        let validator = VaildatorFactory.validatorFor(type: validationType)
+        return try validator.validated(self)
+    }
 }

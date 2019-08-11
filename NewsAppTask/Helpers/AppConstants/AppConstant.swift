@@ -11,8 +11,8 @@ import Foundation
 struct AppConstant {
     
     struct Service {
-        static let baseUrl = ""
-        static let registerApi = ""
+        static let baseUrl = "https://api.qa.mrhe.gov.ae/mrhecloud/v1.4/api"
+        static let registerApi = "/iskan/v1/certificates/towhomitmayconcern"
         static let newsFeedApi = ""
     }
     

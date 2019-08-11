@@ -42,7 +42,7 @@ class CoreDataManager {
         }
     }
     
-    func savePerson(email:String,empID:Int,idbarNo:Int,mobile:Int,name:String,uID:Int) {
+    func savePerson(email:String,empID:Int,idbarNo:Int,mobile:String,name:String,uID:Int,refID: Int) {
         let managedContext = CoreDataManager.shared.persistentContainer.viewContext
         
         guard let entity =  NSEntityDescription.entity(forEntityName: "Person",

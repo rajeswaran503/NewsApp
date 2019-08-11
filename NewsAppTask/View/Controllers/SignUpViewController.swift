@@ -25,21 +25,22 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var inputFieldContentView: UIView!
     
     @IBOutlet weak var registerButton: UIButton!
+    
+    lazy var viewModel: SiguUpViewModel = {
+        let vm = SiguUpViewModel()
+        return vm
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let person = CoreDataManager.shared.fetchPerson()
-        print(person)
-        // Do any additional setup after loading the view.
+      
+        viewModel.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         shadowSetup()
         textFieldUISetup()
-        
-        
     }
     
     
@@ -59,26 +60,41 @@ class SignUpViewController: UIViewController {
     }
     
     func inputValidation() {
-        do {
-            let userName = try nameTextField.validatedText(validationType: .username)
-            let mobileNumber = try mobileTextField.validatedText(validationType: .mobile)
-           let email = try emailTextField.validatedText(validationType: .email)
-           let empID = try employeeIDTextField.validatedText(validationType: .requiredField(field: "Employee ID"))
-            let uID = try unifiedNumberTextField.validatedText(validationType: .requiredField(field: "Unified Number"))
-            let barahNo = try idBarahNoTextField.validatedText(validationType: .requiredField(field: "Barah Number"))
-            CoreDataManager.shared.savePerson(email: email, empID: Int(empID) ?? 0, idbarNo: Int(barahNo) ?? 0, mobile: Int( mobileNumber) ?? 0, name: userName, uID: Int(uID) ?? 0)
-        } catch (let error) {
-            print(error)
-            if let validateError = error as? ValidationError {
-                showAlert(for: validateError.message)
-            }
-           
-        }
+        let emailValue = emailTextField.text ?? ""
+        let nameValue = nameTextField.text ?? ""
+        let mobileNo = mobileTextField.text ?? ""
+        let empId = employeeIDTextField.text ?? ""
+        let uId = unifiedNumberTextField.text ?? ""
+        let barNoData = idBarahNoTextField.text ?? ""
+        viewModel.registerUserFormValidation(name: nameValue, email: emailValue, empID: empId, mobileNo: mobileNo, uID: uId, barNo: barNoData)
+
     }
+    
+   
     @IBAction func registerButtonAction(sender: UIButton) {
         inputValidation()
     }
-
+    
+    
+   
+   
 }
+
+
+extension SignUpViewController: SiguUpViewModelDelegate {
+    
+    func successResponse(response: PersonResponse) {
+        
+    }
+    func alertMessage(message: String) {
+        DispatchQueue.main.async {
+            self.showAlert(for: message)
+            
+        }
+    }
+    
+    
+}
+
 
 
