@@ -86,4 +86,20 @@ class CoreDataManager {
       
     }
     
+    func clearDatabase() {
+        let managedContext = CoreDataManager.shared.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
+        do {
+            let people = try managedContext.fetch(fetchRequest)
+            for i in people {
+                managedContext.delete(i)
+                try managedContext.save()
+            }
+        } catch let error as NSError {
+            print("Could not delete. \(error), \(error.userInfo)")
+            
+        }
+        
+    }
+    
 }

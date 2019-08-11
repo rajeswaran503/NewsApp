@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-            timestampString = "587216178.799022"
+            filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
+            timestampString = "587247162.527051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "validated(_:)"
-            landmarkType = "7">
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "SignUpViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,46 +25,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-            timestampString = "587216178.7991149"
+            filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
+            timestampString = "587247162.5272191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "validated(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsAppTask.EmailValidator.validated(Swift.String) throws -&gt; Swift.String"
-                  moduleName = "NewsAppTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-                  timestampString = "587204158.368102"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "757">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsAppTask.EmailValidator.validated(Swift.String) throws -&gt; Swift.String"
-                  moduleName = "NewsAppTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-                  timestampString = "587204158.371805"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "912">
-               </Location>
-            </Locations>
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "SignUpViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -73,45 +41,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NewsAppTask/Helpers/InputFieldValidator/InputFieldValidator.swift"
-            timestampString = "587216178.7991821"
+            filePath = "NewsAppTask/NetworkModule/NetworkManager/NewsFeedManager.swift"
+            timestampString = "587247162.527366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "validated(_:)"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getNewsFeed(onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NewsAppTask/Helpers/Extensions/TextFieldExtension.swift"
-            timestampString = "587205591.764475"
+            filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
+            timestampString = "587247162.527451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "validatedText(validationType:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsAppTask/Database/CoreDataManager.swift"
-            timestampString = "587216178.799281"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "savePerson(email:empID:idbarNo:mobile:name:uID:refID:)"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "keyboardWillShow(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
-            timestampString = "587216178.79935"
+            timestampString = "587247162.5275429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "alertMessage(message:)"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "keyboardWillShow(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,45 +90,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/View/Controllers/SignUpViewController.swift"
-            timestampString = "587216178.799433"
+            timestampString = "587247162.527644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "alertMessage(message:)"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "successResponse(response:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (NewsAppTask.PersonResponse) -&gt; () in NewsAppTask.SignUpViewController.saveUserDetails() -&gt; ()"
-                  moduleName = "NewsAppTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/View/Controllers/SignUpViewController.swift"
-                  timestampString = "587204158.421633"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "235">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (NewsAppTask.APIError) -&gt; () in NewsAppTask.SignUpViewController.saveUserDetails() -&gt; ()"
-                  moduleName = "NewsAppTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Work/NewAppTask/NewsApp/NewsAppTask/View/Controllers/SignUpViewController.swift"
-                  timestampString = "587204158.424704"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "14">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/View/Controllers/NewsFeedViewController.swift"
+            timestampString = "587247162.527764"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "delateAction(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/Routers/BaseRouter.swift"
+            timestampString = "587245513.996788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "buildRequest(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/Encoding/Encoding.swift"
+            timestampString = "587246706.094274"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "encode(urlRequest:bodyParameters:urlParameters:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -186,12 +154,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsAppTask/NetworkModule/NetworkManager/BaseNetworkManager.swift"
-            timestampString = "587205591.764986"
+            timestampString = "587246361.790105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "baseServiceRequest(route:decoder:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/Encoding/Encoding.swift"
+            timestampString = "587246706.094494"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "encode(urlRequest:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/Encoding/Encoding.swift"
+            timestampString = "587246706.094592"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "encode(urlRequest:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/Encoding/Encoding.swift"
+            timestampString = "587246706.0946701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "encode(urlRequest:bodyParameters:urlParameters:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsAppTask/NetworkModule/Encoding/Encoding.swift"
+            timestampString = "587246706.094746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "encode(urlRequest:with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

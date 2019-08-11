@@ -31,19 +31,26 @@ class SignUpViewController: UIViewController {
         return vm
     }()
 
+    //MARK: ViewController Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        self.title = "Sign Up"
         viewModel.delegate = self
+        addKeyboardObserver()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         shadowSetup()
         textFieldUISetup()
+        
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
+    //MARK: UI Design Methods
     func shadowSetup() {
         registerButton.dropShadow(color: .lightGray, offSet: CGSize(width: 1, height: 1), cornerRadius: registerButton.frame.size.height)
         inputFieldContentView.dropShadow(color: .lightGray, offSet: CGSize.zero, cornerRadius: 10)
@@ -59,6 +66,42 @@ class SignUpViewController: UIViewController {
         employeeIDTextField.addBottomBorder()
     }
     
+    //MARK: KeyBoard MoveUP/Down Methods
+    func addKeyboardObserver() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        
+        if let textField = UIResponder.currentFirst() as? UITextField {
+          
+            let frame = textField.superview?.convert(textField.frame, to: nil) ?? CGRect()
+            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+               
+                if keyboardSize.origin.y < frame.maxY {
+                    let diff = (keyboardSize.origin.y - frame.maxY)
+                    self.view.frame.origin.y += diff
+                    
+                }
+              
+            }
+            
+        }
+        
+       
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+        self.view.frame.origin.y = 0
+        
+        
+    }
+    
+    
     func inputValidation() {
         let emailValue = emailTextField.text ?? ""
         let nameValue = nameTextField.text ?? ""
@@ -71,6 +114,7 @@ class SignUpViewController: UIViewController {
     }
     
    
+    //MARK: Button Action Methods
     @IBAction func registerButtonAction(sender: UIButton) {
         inputValidation()
     }
@@ -80,10 +124,15 @@ class SignUpViewController: UIViewController {
    
 }
 
-
+//MARK: ViewModel Delegate Methods
 extension SignUpViewController: SiguUpViewModelDelegate {
     
     func successResponse(response: PersonResponse) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let nextVC = AppConstant.StoryBoardReference.main.instantiateViewController(withIdentifier: AppConstant.ViewControllerIdentifier.NewsFeedVC)
+            self.navigationController?.pushViewController(nextVC, animated: false)
+        }
+        
         
     }
     func alertMessage(message: String) {
@@ -95,6 +144,7 @@ extension SignUpViewController: SiguUpViewModelDelegate {
     
     
 }
+
 
 
 

@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let _ = CoreDataManager.shared.fetchPerson() {
+            let newsVC = AppConstant.StoryBoardReference.main.instantiateViewController(withIdentifier: AppConstant.ViewControllerIdentifier.NewsFeedVC)
+            window?.rootViewController = UINavigationController(rootViewController: newsVC)
+        }
+        
         return true
     }
 

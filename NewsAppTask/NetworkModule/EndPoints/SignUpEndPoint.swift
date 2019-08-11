@@ -37,8 +37,8 @@ extension SignUpEndPoint:EndPointType {
     var task: HTTPTask {
         switch self {
         case .registerUser(let param) :
-           // return .requestParameters(bodyParameters: param, bodyEncoding: .formDataEncoding, urlParameters: nil)
-           return .requestParametersAndHeaders(bodyParameters: param, bodyEncoding: .formDataEncoding, urlParameters: nil, additionHeaders: ["consumer-secret":"20891a1b4504ddc33d42501f9c8d2215fbe85008","consumer-key":"mobile_dev"])
+          
+           return .requestParametersAndHeaders(bodyParameters: param, bodyEncoding: .urlEncoding, urlParameters: nil, additionHeaders: ["consumer-secret":AppConstant.consumerSecret,"consumer-key":AppConstant.consumerKey])
         
         }
     }

@@ -32,7 +32,10 @@ class SiguUpViewModel {
     }
     
     private func registerNewUser(userDetails:PersonData) {
- 
+        if !Reachability.isConnectedToNetwork() {
+            sendMessage(message: AppConstant.AlertMessage.internetConnection)
+            return
+        }
         LoadingIndicator.show()
         SignUpManager().signUp(userData: userDetails, onSuccess: { (response) in
             LoadingIndicator.hide()

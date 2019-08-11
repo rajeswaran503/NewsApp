@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yru-82-QDw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -97,6 +97,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="shl-DB-dXv"/>
                     <connections>
                         <outlet property="emailTextField" destination="lO6-Ij-Y0G" id="IV7-Ka-LW6"/>
                         <outlet property="employeeIDTextField" destination="GNI-pm-NWR" id="aR9-oz-f0r"/>
@@ -110,40 +111,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1080.8" y="93.103448275862078"/>
         </scene>
-        <!--View Controller-->
+        <!--News Feed View Controller-->
         <scene sceneID="6mZ-0M-b2Z">
             <objects>
-                <viewController id="OAZ-Xn-iqw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsFeedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OAZ-Xn-iqw" customClass="NewsFeedViewController" customModule="NewsAppTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ji9-k9-yCZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eYq-oM-zX6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eYq-oM-zX6" firstAttribute="leading" secondItem="hi4-UZ-c0o" secondAttribute="leading" id="PPO-zg-LoT"/>
+                            <constraint firstItem="hi4-UZ-c0o" firstAttribute="trailing" secondItem="eYq-oM-zX6" secondAttribute="trailing" id="Qfw-zF-iVv"/>
+                            <constraint firstItem="eYq-oM-zX6" firstAttribute="top" secondItem="hi4-UZ-c0o" secondAttribute="top" id="c8n-si-mVk"/>
+                            <constraint firstItem="hi4-UZ-c0o" firstAttribute="bottom" secondItem="eYq-oM-zX6" secondAttribute="bottom" id="rZJ-TV-CS2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hi4-UZ-c0o"/>
                     </view>
                     <navigationItem key="navigationItem" id="c5b-SX-oWF"/>
+                    <connections>
+                        <outlet property="newsFeedTableView" destination="eYq-oM-zX6" id="hqq-WP-STC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPM-dp-bjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1966" y="134"/>
+            <point key="canvasLocation" x="2396" y="93"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="4zF-yO-IbK">
+        <scene sceneID="iOB-NE-j55">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IvF-G8-sgx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignUP_NC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yru-82-QDw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="07a-kc-waj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ETn-bc-ebk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OAZ-Xn-iqw" kind="relationship" relationship="rootViewController" id="Tec-na-DXy"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IGT-Lr-3dT"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7HO-bx-jWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ya1-UI-6P2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="119"/>
+            <point key="canvasLocation" x="183" y="93"/>
         </scene>
     </scenes>
 </document>
